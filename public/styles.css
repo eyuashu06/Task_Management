@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* Auth container */
+.auth-container {
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.auth-container h1 {
+  margin-bottom: 10px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #4f46e5;
+  color: white;
+  transition: 0.3s;
+}
+
+.auth-buttons button:hover {
+  background: #6366f1;
+}
+
+/* Messages */
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.message.success { color: green; }
+.message.error { color: red; }
+
+/* Task page */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #4f46e5;
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.task-form button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.task-form button:hover {
+  background: #6366f1;
+}
+
+.task-board ul {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.task-item:hover {
+  background: #eef2ff;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#logoutBtn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background: #f87171;
+}
